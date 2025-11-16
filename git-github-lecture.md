@@ -3,6 +3,9 @@ marp: true
 style: |
   section {
     padding: 40px !important;   /* デフォルト 30px → やや増やす */
+    font-family: "M PLUS 1p",
+    sans-serif;
+    justify-content: flex-start;  /* 本文を画面上段に配置 */
   }
 ---
 <!--

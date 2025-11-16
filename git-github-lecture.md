@@ -252,36 +252,7 @@ git commit -m "最初のコミット"
 
 # 6. 繰り返し（2-5を繰り返す）
 ```
-
 ---
-### 実践例：Webサイトの開発
-
-```bash
-# プロジェクトフォルダを作成
-mkdir my-website
-cd my-website
-
-# Gitリポジトリを初期化
-git init
-
-# HTMLファイルを作成
-echo "<h1>Hello World</h1>" > index.html
-
-# ファイルを追加してコミット
-git add index.html
-git commit -m "最初のHTMLファイルを追加"
-
-# CSSファイルを追加
-echo "body { font-family: Arial; }" > style.css
-git add style.css
-git commit -m "CSSファイルを追加"
-
-# 変更履歴を確認
-git log --oneline
-```
-
----
-
 ## 7. GitHubを使った共同作業
 
 ### リモートリポジトリの設定
@@ -299,7 +270,7 @@ git push -u origin main
 # 以後のプッシュ（ブランチ名を省略可能）
 git push
 ```
-
+---
 ### GitHubでの作業フロー
 
 #### 1. GitHubでリポジトリを作成
@@ -319,6 +290,7 @@ git remote add origin https://github.com/ユーザー名/リポジトリ名.git
 git push -u origin main
 ```
 
+---
 #### 3. GitHubから最新の変更を取得
 
 ```bash
@@ -343,7 +315,9 @@ git commit -m "新機能を追加"
 
 # 3. ブランチをGitHubにプッシュ
 git push -u origin feature/new-feature
-
+```
+---
+```bash
 # 4. GitHubでプルリクエストを作成
 # （WebブラウザでGitHubにアクセスして操作）
 
@@ -351,27 +325,10 @@ git push -u origin feature/new-feature
 # （GitHub上で操作、またはローカルで）
 git checkout main
 git pull
-```
 
 ### Issue（イシュー）の活用
-
-Issueは、バグ報告や機能要望を管理するための機能です。
-
-#### Issueの使い方
-
-1. リポジトリの「Issues」タブをクリック
-2. 「New Issue」をクリック
-3. タイトルと説明を入力
-4. ラベルを付けて分類（バグ、機能追加など）
-5. 「Submit new issue」で作成
-
-#### Issueの活用例
-
-- **バグ報告**: 見つけた問題を報告
-- **機能要望**: 追加してほしい機能を提案
-- **質問**: 使い方について質問
-- **タスク管理**: やるべきことをリスト化
-
+```
+---
 ### Pull Request（プルリクエスト）の活用
 
 Pull Requestは、コードの変更を提案し、レビューを受けるための機能です。
@@ -390,6 +347,25 @@ Pull Requestは、コードの変更を提案し、レビューを受けるた�
 - **詳細な説明**: なぜ変更したか、何を変更したかを説明
 - **スクリーンショット**: UIの変更がある場合は画像を添付
 - **関連Issue**: 関連するIssue番号を記載（例: `#123`）
+
+---
+Issueは、バグ報告や機能要望を管理するための機能です。
+
+#### Issueの使い方
+
+1. リポジトリの「Issues」タブをクリック
+2. 「New Issue」をクリック
+3. タイトルと説明を入力
+4. ラベルを付けて分類（バグ、機能追加など）
+5. 「Submit new issue」で作成
+
+#### Issueの活用例
+
+- **バグ報告**: 見つけた問題を報告
+- **機能要望**: 追加してほしい機能を提案
+- **質問**: 使い方について質問
+- **タスク管理**: やるべきことをリスト化
+
 
 ---
 

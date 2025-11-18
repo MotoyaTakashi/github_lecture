@@ -346,11 +346,10 @@ git push -u origin feature/new-feature
 # （GitHub上で操作、またはローカルで）
 git checkout main
 git pull
-
-### Issue（イシュー）の活用
 ```
+
 ---
-### Pull Request（プルリクエスト）の活用
+### Issue（イシュー）の活用
 
 Pull Requestは、コードの変更を提案し、レビューを受けるための機能です。
 

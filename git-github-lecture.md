@@ -667,7 +667,7 @@ GitHub Projectsでタスクを管理：
 
 ### OSS活用事例
 - [OSSを活用した「八王子市防災マップ」](https://www.city.hachioji.tokyo.jp/emergency/bousai/m12873/001/p031341.html) - GitHub PagesとOSSを活用した防災マップの実例
-- [書籍「つながる行政サービス -1.0」サポートサイト](https://github.com/MotoyaTakashi/connected-onestop-in-gov-info) - 行政サービスに関する書籍のサポートサイト
+- [本資料](https://github.com/MotoyaTakashi/github_lecture)
 
 ---
 ### よく使うコマンド一覧（チートシート）

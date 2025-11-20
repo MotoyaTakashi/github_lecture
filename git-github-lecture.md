@@ -209,7 +209,7 @@ git diff
 
 ```bash
 # 特定のファイルをステージングに追加
-git add ファイル名
+git add readme.txt
 
 # すべての変更をステージングに追加
 git add .
@@ -254,20 +254,20 @@ git restore --staged ファイル名
 # ブランチの一覧を表示
 git branch
 
-# 新しいブランチを作成
-git branch ブランチ名
+# 新しいブランチを作成（future）
+git branch future
 
 ```
 ---
 ```bash
 # ブランチを切り替える
-git checkout ブランチ名
+git checkout future
 
 # ブランチを作成して切り替える（上記2つのコマンドを同時に）
-git checkout -b ブランチ名
+git checkout -b future
 
 # ブランチを削除
-git branch -d ブランチ名
+git branch -d future
 ```
 
 ### ブランチの統合（マージ）
@@ -277,7 +277,7 @@ git branch -d ブランチ名
 git checkout main
 
 # 他のブランチを統合
-git merge ブランチ名
+git merge future
 ```
 
 ---
@@ -329,8 +329,14 @@ git push
 1. GitHubにログイン
 2. 「New」ボタンをクリック
 3. リポジトリ名を入力
+
+＊＊＊注意＊＊＊
+Choose visibility *は、初期設定では"Public"です。インターネット上誰でも閲覧ができます。
+<u>研究中または開発中の案件は、"Private"</u>に変更しておきます。
+
 4. 「Create repository」をクリック
 
+---
 #### 2. ローカルのコードをGitHubにアップロード
 
 ```bash
@@ -341,7 +347,6 @@ git remote add origin https://github.com/ユーザー名/リポジトリ名.git
 git push -u origin main
 ```
 
----
 #### 3. GitHubから最新の変更を取得
 
 ```bash
@@ -352,6 +357,7 @@ git fetch
 git pull
 ```
 
+---
 ### 共同作業の流れ
 
 #### ブランチを使った作業
@@ -367,7 +373,6 @@ git commit -m "新機能を追加"
 # 3. ブランチをGitHubにプッシュ
 git push -u origin feature/new-feature
 ```
----
 ```bash
 # 4. GitHubでプルリクエストを作成
 # （WebブラウザでGitHubにアクセスして操作）

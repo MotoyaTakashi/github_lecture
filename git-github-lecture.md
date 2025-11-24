@@ -355,6 +355,13 @@ ssh-keygen -t ed25519 -C "あなたのメールアドレス"
 3. **New SSH key** をクリック
 4. 公開鍵を貼り付けて保存
 
+公開鍵のアップロードがすんだら、以下のコマンドで確認できます。
+```
+ssh -T git@github.com
+
+Hi (user_name)! You've successfully authenticated ・・・
+```
+
 これでGitHubが「あなたのPCを信頼できる」と判断します。
 
 ---
